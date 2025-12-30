@@ -30,8 +30,8 @@ A lightweight Pastebin-like application for sharing text snippets with optional 
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd pastebin-lite
+   git clone https://github.com/KondapalliChandrika/paste-bin.git
+   cd paste-bin
    ```
 
 2. **Install dependencies**
@@ -41,10 +41,6 @@ A lightweight Pastebin-like application for sharing text snippets with optional 
 
 3. **Set up environment variables**
 
-   Create a `.env.local` file in the root directory:
-   ```bash
-   cp env.example .env.local
-   ```
 
    Edit `.env.local` and add your PostgreSQL connection string:
    ```env
@@ -59,7 +55,7 @@ A lightweight Pastebin-like application for sharing text snippets with optional 
 
 4. **Run the development server**
    ```bash
-   npm run dev
+   npm start
    ```
 
 5. **Open the application**
@@ -271,6 +267,3 @@ Returns an HTML page displaying the paste content, or 404 if unavailable.
      -H "x-test-now-ms: $(($(date +%s)000 + 61000))"
    ```
 
-## License
-
-MIT
